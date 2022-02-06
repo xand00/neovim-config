@@ -103,6 +103,16 @@ return packer.startup(function(use)
   -- Neovium lsp status
   use"nvim-lua/lsp-status.nvim"
 
+
+  -- Git signs
+  use {
+  	"lewis6991/gitsigns.nvim",
+  	requires = {
+    	"nvim-lua/plenary.nvim"
+  	},
+	tag = 'release' -- To use the latest release
+}
+
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()

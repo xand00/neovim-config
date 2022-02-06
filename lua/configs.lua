@@ -12,3 +12,5 @@ require('configs.better-escape')
 
 require('configs.lualine')
 require('configs.lsp-status')
+
+require('configs.gitsigns')
