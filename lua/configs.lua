@@ -14,3 +14,5 @@ require('configs.lualine')
 require('configs.lsp-status')
 
 require('configs.gitsigns')
+
+require('configs.comment')
