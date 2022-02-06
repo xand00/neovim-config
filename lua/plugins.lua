@@ -119,6 +119,9 @@ return packer.startup(function(use)
   -- Comment context
   use"JoosepAlviste/nvim-ts-context-commentstring"
 
+  -- Autopairs
+  use"windwp/nvim-autopairs"
+
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
