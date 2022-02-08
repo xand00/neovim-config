@@ -1,3 +1,8 @@
+local status_ok, lspconfig = pcall(require, "lspconfig")
+if not status_ok then
+	return
+end
+
 local M = {}
 -- Mappings
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

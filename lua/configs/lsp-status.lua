@@ -1,4 +1,7 @@
-local lsp_status = require('lsp-status')
+local status_ok, lsp_status = pcall(require, "lsp-status")
+if not status_ok then
+	return
+end
 
 -- completion_customize_lsp_label as used in completion-nvim
 
